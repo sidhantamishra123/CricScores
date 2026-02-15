@@ -1,3 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="f7ef2882c347b210d29db34ed40131fc" label="Players" max_length="40" name="x_1907986_cricsc_0_players" type="collection"/>
+    <element db_object_id="f7ef2882c347b210d29db34ed40131fc" label="Players" max_length="40" name="x_1907986_cricsc_0_players" type="collection">
+        <element display="true" label="Player name" max_length="40" name="player_name" type="string"/>
+        <element label="Face image ID" max_length="40" name="face_image_id" type="string"/>
+        <element label="Current ICC Rank (Test)" max_length="40" name="current_icc_rank_test" type="string"/>
+        <element label="Current ICC Rank (T20)" max_length="40" name="current_icc_rank_t20" type="string"/>
+        <element label="Best ICC Ranking (T20)" max_length="40" name="best_icc_ranking_t20" type="string"/>
+        <element label="Player middle name" max_length="40" name="player_middle_name" type="string"/>
+        <element label="Player last name" max_length="40" name="player_last_name" type="string"/>
+        <element label="Jersey number" max_length="40" name="jersey_number" type="string"/>
+        <element label="Age from API" max_length="40" name="age_from_api" type="integer"/>
+        <element label="Player ID" max_length="40" name="player_id" type="string"/>
+        <element label="Best ICC Ranking (ODI)" max_length="40" name="best_icc_ranking_odi" type="string"/>
+        <element label="Is wicket keeper" max_length="40" name="is_wicket_keeper" type="boolean"/>
+        <element label="Profile image URL" max_length="1024" name="profile_image_url" type="url"/>
+        <element label="Current ICC Rank (ODI)" max_length="40" name="current_icc_rank_odi" type="string"/>
+        <element label="Country" max_length="32" name="country" reference="x_1907986_cricsc_0_countries" type="reference"/>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Transgender" sequence="2" value="transgender"/>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+            </choice>
+        </element>
+        <element label="Height" max_length="40" name="height" type="string"/>
+        <element label="Disability" max_length="40" name="disability" type="boolean"/>
+        <element label="Birth place" max_length="40" name="birth_place" type="string"/>
+        <element label="Is player" max_length="40" name="is_player" type="boolean"/>
+        <element label="Age" max_length="40" name="age" type="integer"/>
+        <element label="Nick name" max_length="40" name="nick_name" type="string"/>
+        <element label="Last synced" max_length="40" name="last_synced" type="glide_date_time"/>
+        <element label="Is author" max_length="40" name="is_author" type="boolean"/>
+        <element label="Best ICC Ranking (Test)" max_length="40" name="best_icc_ranking_test" type="string"/>
+        <element choice="1" label="Role" max_length="40" name="role" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="All rounder" sequence="2" value="all_rounder"/>
+                <element inactive_on_update="false" label="Bowler" sequence="1" value="bowler"/>
+                <element inactive_on_update="false" label="Batsman" sequence="0" value="batsman"/>
+            </choice>
+        </element>
+        <element choice="1" label="Batting style" max_length="40" name="batting_style" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Left handed" sequence="1" value="left_handed"/>
+                <element inactive_on_update="false" label="Right handed" sequence="0" value="right_handed"/>
+            </choice>
+        </element>
+        <element label="Bio" max_length="10000" name="bio" type="string"/>
+        <element label="Player first name" max_length="40" name="player_first_name" type="string"/>
+        <element label="Picture" max_length="40" name="picture" type="user_image"/>
+        <element label="DOB" max_length="40" name="dob" type="glide_date"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Bowling style" max_length="40" name="bowling_style" type="string"/>
+        <element label="Wicket keeper" max_length="40" name="wicket_keeper" type="boolean"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
 </database>
