@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d8df1946838372104799ec80ceaad388" label="ICC Rankings" max_length="40" name="x_1907986_cricsc_0_icc_rankings" type="collection">
+        <element choice="1" label="Ranking type" max_length="40" name="ranking_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Team" sequence="0" value="team"/>
+                <element inactive_on_update="false" label="Player" sequence="1" value="player"/>
+            </choice>
+        </element>
+        <element label="Team" max_length="32" name="team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Points" max_length="40" name="points" type="integer"/>
+        <element label="Matches played" max_length="40" name="matches_played" type="integer"/>
+        <element label="Player" max_length="32" name="player" reference="x_1907986_cricsc_0_players" type="reference"/>
+        <element label="Cricket format" max_length="32" name="cricket_format" reference="x_1907986_cricsc_0_match_formats" type="reference"/>
+        <element label="Previous rank holder" max_length="32" name="previous_rank_holder" reference="x_1907986_cricsc_0_players" type="reference"/>
+        <element label="Ranking date" max_length="40" name="ranking_date" type="glide_date"/>
+        <element label="Rating" max_length="40" name="rating" type="integer"/>
+        <element display="true" label="Ranking description" max_length="40" name="ranking_description" type="string"/>
+        <element label="Rank position" max_length="40" name="rank_position" type="integer"/>
+        <element choice="1" label="Ranking category" max_length="40" name="ranking_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Batting" sequence="0" value="batting"/>
+                <element inactive_on_update="false" label="Bowling" sequence="1" value="bowling"/>
+                <element inactive_on_update="false" label="All rounder" sequence="2" value="all_rounder"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="cricket_format"/>
+        </index>
+        <index name="index2">
+            <element name="player"/>
+        </index>
+        <index name="index3">
+            <element name="previous_rank_holder"/>
+        </index>
+        <index name="index4">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

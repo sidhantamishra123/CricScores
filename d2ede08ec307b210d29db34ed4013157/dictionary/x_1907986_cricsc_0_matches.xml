@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e94b118a834372104799ec80ceaad3d0" label="Matches" max_length="40" name="x_1907986_cricsc_0_matches" type="collection">
+        <element label="Day/Night" max_length="40" name="day_night" type="boolean"/>
+        <element choice="1" label="Match state" max_length="40" name="match_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Abandoned" sequence="2" value="abandoned"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="Live" sequence="0" value="live"/>
+                <element inactive_on_update="false" label="Upcoming" sequence="3" value="upcoming"/>
+                <element inactive_on_update="false" label="Complete" sequence="1" value="complete"/>
+            </choice>
+        </element>
+        <element label="Winning team" max_length="32" name="winning_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Current innings" max_length="40" name="current_innings" type="integer"/>
+        <element label="Match type" max_length="32" name="match_type" reference="x_1907986_cricsc_0_match_type" type="reference"/>
+        <element label="Year" max_length="40" name="year" type="string"/>
+        <element label="Schedule" max_length="32" name="schedule" reference="x_1907986_cricsc_0_schedules" type="reference"/>
+        <element display="true" label="Match name" max_length="40" name="match_name" type="string"/>
+        <element label="Last updated" max_length="40" name="last_updated" type="glide_date_time"/>
+        <element label="End time" max_length="40" name="end_time" type="glide_time"/>
+        <element label="Toss" max_length="32" name="toss" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Result" max_length="40" name="result" type="string"/>
+        <element label="Current batting team" max_length="32" name="current_batting_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Current day" max_length="40" name="current_day" type="integer"/>
+        <element label="Status text" max_length="40" name="status_text" type="string"/>
+        <element label="Current bowling team" max_length="32" name="current_bowling_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element choice="1" label="Match kind" max_length="40" name="match_kind" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Official" sequence="1" value="official"/>
+                <element inactive_on_update="false" label="Friendly" sequence="0" value="friendly"/>
+                <element inactive_on_update="false" label="Warm-up" sequence="2" value="warm_up"/>
+            </choice>
+        </element>
+        <element label="Match date" max_length="40" name="match_date" type="glide_date"/>
+        <element label="Match description" max_length="40" name="match_description" type="string"/>
+        <element label="Format" max_length="32" name="format" reference="x_1907986_cricsc_0_match_formats" type="reference"/>
+        <element choice="1" label="Toss decision" max_length="40" name="toss_decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Batting" sequence="0" value="batting"/>
+                <element inactive_on_update="false" label="Bowling" sequence="1" value="bowling"/>
+            </choice>
+        </element>
+        <element label="Loosing team" max_length="32" name="loosing_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Team 2" max_length="32" name="team_2" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Series" max_length="32" name="series" reference="x_1907986_cricsc_0_series" type="reference"/>
+        <element label="Team 1" max_length="32" name="team_1" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Match ID" max_length="40" name="match_id" type="string"/>
+        <element label="Start time" max_length="40" name="start_time" type="glide_time"/>
+        <index name="index">
+            <element name="current_batting_team"/>
+        </index>
+        <index name="index2">
+            <element name="current_bowling_team"/>
+        </index>
+        <index name="index3">
+            <element name="format"/>
+        </index>
+        <index name="index4">
+            <element name="loosing_team"/>
+        </index>
+        <index name="index5">
+            <element name="match_type"/>
+        </index>
+        <index name="index6">
+            <element name="schedule"/>
+        </index>
+        <index name="index7">
+            <element name="series"/>
+        </index>
+        <index name="index8">
+            <element name="team_1"/>
+        </index>
+        <index name="index9">
+            <element name="team_2"/>
+        </index>
+        <index name="index10">
+            <element name="toss"/>
+        </index>
+        <index name="index11">
+            <element name="winning_team"/>
+        </index>
+    </element>
+</database>

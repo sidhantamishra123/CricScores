@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5e4fc102830372104799ec80ceaad36a" label="Statistics" max_length="40" name="x_1907986_cricsc_0_statistics" type="collection">
+        <element label="Bowling strike rate" max_length="38" name="bowling_strike_rate" type="decimal"/>
+        <element label="Team" max_length="32" name="team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Five wicket hauls" max_length="40" name="five_wicket_hauls" type="integer"/>
+        <element label="Fifties" max_length="40" name="fifties" type="integer"/>
+        <element label="Balls played" max_length="40" name="balls_played" type="integer"/>
+        <element label="Hundreds" max_length="40" name="hundreds" type="integer"/>
+        <element label="Two hundreds" max_length="40" name="two_hundreds" type="integer"/>
+        <element label="Number of notouts" max_length="40" name="number_of_notouts" type="integer"/>
+        <element label="Runs coneeded" max_length="40" name="runs_coneeded" type="integer"/>
+        <element label="Four wicket hauls" max_length="40" name="four_wicket_hauls" type="integer"/>
+        <element label="Innings" max_length="40" name="innings" type="integer"/>
+        <element label="Batting strike rate" max_length="38" name="batting_strike_rate" type="decimal"/>
+        <element label="Runs scored" max_length="40" name="runs_scored" type="string"/>
+        <element label="Economy" max_length="38" name="economy" type="decimal"/>
+        <element label="Fours" max_length="40" name="fours" type="integer"/>
+        <element label="Ninties" max_length="40" name="ninties" type="integer"/>
+        <element label="Best bowling figure" max_length="40" name="best_bowling_figure" type="string"/>
+        <element label="Yearly statistics" max_length="40" name="yearly_statistics" type="boolean"/>
+        <element label="Opponent specific" max_length="40" name="opponent_specific" type="boolean"/>
+        <element label="Wickets taken" max_length="40" name="wickets_taken" type="integer"/>
+        <element label="Bowling average" max_length="38" name="bowling_average" type="decimal"/>
+        <element choice="1" label="Mens/Womens" max_length="40" name="mens_womens" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Mens" sequence="0" value="mens"/>
+                <element inactive_on_update="false" label="Womens" sequence="1" value="womens"/>
+            </choice>
+        </element>
+        <element label="Ten wicket hauls" max_length="40" name="ten_wicket_hauls" type="integer"/>
+        <element label="Matches" max_length="40" name="matches" type="integer"/>
+        <element label="Opponent" max_length="32" name="opponent" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Year" max_length="40" name="year" type="string"/>
+        <element label="Match format" max_length="32" name="match_format" reference="x_1907986_cricsc_0_match_formats" type="reference"/>
+        <element label="Total balls faced" max_length="40" name="total_balls_faced" type="integer"/>
+        <element display="true" label="Stats ID" max_length="40" name="stats_id" type="string"/>
+        <element label="Highest score" max_length="40" name="highest_score" type="integer"/>
+        <element label="Ducks" max_length="40" name="ducks" type="integer"/>
+        <element label="Overs" max_length="38" name="overs" type="decimal"/>
+        <element label="Three hundreds" max_length="40" name="three_hundreds" type="integer"/>
+        <element choice="1" label="Statistics category" max_length="40" name="statistics_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Match" sequence="0" value="match"/>
+                <element inactive_on_update="false" label="Career" sequence="1" value="career"/>
+            </choice>
+        </element>
+        <element label="Total maiden overs" max_length="40" name="total_maiden_overs" type="integer"/>
+        <element label="Sixes" max_length="40" name="sixes" type="integer"/>
+        <element label="Batting average" max_length="38" name="batting_average" type="decimal"/>
+        <element label="Player" max_length="32" name="player" reference="x_1907986_cricsc_0_players" type="reference"/>
+        <element label="Balls bowled" max_length="40" name="balls_bowled" type="integer"/>
+        <element label="Four hundreds" max_length="40" name="four_hundreds" type="integer"/>
+        <index name="index">
+            <element name="match_format"/>
+        </index>
+        <index name="index2">
+            <element name="opponent"/>
+        </index>
+        <index name="index3">
+            <element name="player"/>
+        </index>
+        <index name="index4">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

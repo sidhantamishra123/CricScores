@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b0d1ad4a838372104799ec80ceaad351" label="League standings" max_length="40" name="x_1907986_cricsc_0_league_standings" type="collection">
+        <element label="Runs conceeded" max_length="40" name="runs_conceeded" type="integer"/>
+        <element label="Team" max_length="32" name="team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Overs bowled" max_length="38" name="overs_bowled" type="decimal"/>
+        <element label="Rank" max_length="40" name="rank" type="integer"/>
+        <element label="Points" max_length="38" name="points" type="decimal"/>
+        <element label="Matches tied" max_length="40" name="matches_tied" type="integer"/>
+        <element choice="1" label="Qualification status" max_length="40" name="qualification_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="2" value="pending"/>
+                <element inactive_on_update="false" label="Not qualified" sequence="1" value="not_qualified"/>
+                <element inactive_on_update="false" label="Qualified" sequence="0" value="qualified"/>
+            </choice>
+        </element>
+        <element label="Overs faced" max_length="38" name="overs_faced" type="decimal"/>
+        <element label="Series" max_length="32" name="series" reference="x_1907986_cricsc_0_series" type="reference"/>
+        <element label="Net run rate" max_length="38" name="net_run_rate" type="decimal"/>
+        <element label="Cricket format" max_length="32" name="cricket_format" reference="x_1907986_cricsc_0_match_formats" type="reference"/>
+        <element label="Matches lost" max_length="40" name="matches_lost" type="integer"/>
+        <element label="Runs score" max_length="40" name="runs_score" type="integer"/>
+        <element label="No result" max_length="40" name="no_result" type="integer"/>
+        <element display="true" label="Team standing" max_length="40" name="team_standing" type="string"/>
+        <element label="Matches played" max_length="40" name="matches_played" type="integer"/>
+        <element label="Matches won" max_length="40" name="matches_won" type="integer"/>
+        <element label="Seasons" max_length="40" name="seasons" type="string"/>
+        <index name="index">
+            <element name="cricket_format"/>
+        </index>
+        <index name="index2">
+            <element name="series"/>
+        </index>
+        <index name="index3">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f233590a830372104799ec80ceaad36a" label="Categories" max_length="40" name="x_1907986_cricsc_0_categories" type="collection">
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Category ID" max_length="40" name="category_id" type="string"/>
+        <element display="true" label="Category name" max_length="40" name="category_name" type="string"/>
+    </element>
+</database>

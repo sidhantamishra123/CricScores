@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9de6210683c372104799ec80ceaad304" label="News" max_length="40" name="x_1907986_cricsc_0_news" type="collection">
+        <element label="Published time" max_length="40" name="published_time" type="glide_date_time"/>
+        <element label="Story type" max_length="32" name="story_type" reference="x_1907986_cricsc_0_categories" type="reference"/>
+        <element label="Authors" max_length="1024" name="authors" reference="x_1907986_cricsc_0_players" type="glide_list"/>
+        <element label="Intro" max_length="255" name="intro" type="string"/>
+        <element label="Tags" max_length="40" name="tags" type="string"/>
+        <element label="Content type" max_length="40" name="content_type" type="string"/>
+        <element label="Image ID" max_length="40" name="image_id" type="string"/>
+        <element label="Source" max_length="40" name="source" type="string"/>
+        <element label="News ID" max_length="40" name="news_id" type="string"/>
+        <element label="Cover Image ID" max_length="40" name="cover_image_id" type="string"/>
+        <element label="Cover image source" max_length="40" name="cover_image_source" type="string"/>
+        <element display="true" label="Headline" max_length="255" name="headline" type="string"/>
+        <element label="Cover image caption" max_length="40" name="cover_image_caption" type="string"/>
+        <element label="Web URL" max_length="1024" name="web_url" type="url"/>
+        <element label="Authors tweeter handle" max_length="40" name="authors_tweeter_handle" type="glide_list"/>
+        <element label="Content" max_length="1000" name="content" type="string"/>
+        <element label="Seo Headline" max_length="40" name="seo_headline" type="string"/>
+        <index name="index">
+            <element name="story_type"/>
+        </index>
+    </element>
+</database>

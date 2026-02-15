@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="539a590a834372104799ec80ceaad314" label="Schedules" max_length="40" name="x_1907986_cricsc_0_schedules" type="collection">
+        <element label="Match type" max_length="32" name="match_type" reference="x_1907986_cricsc_0_match_type" type="reference"/>
+        <element label="Country" max_length="32" name="country" reference="x_1907986_cricsc_0_countries" type="reference"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Series" max_length="32" name="series" reference="x_1907986_cricsc_0_series" type="reference"/>
+        <element display="true" label="Schedule name" max_length="40" name="schedule_name" type="string"/>
+        <element label="Schedule ID" max_length="40" name="schedule_id" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="match_type"/>
+        </index>
+        <index name="index3">
+            <element name="series"/>
+        </index>
+    </element>
+</database>

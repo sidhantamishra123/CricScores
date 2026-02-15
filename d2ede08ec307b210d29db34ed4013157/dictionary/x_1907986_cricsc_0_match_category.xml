@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d15e8d4e83cf32104799ec80ceaad3bf" label="Match category" max_length="40" name="x_1907986_cricsc_0_match_category" type="collection">
+        <element display="true" label="Category Name" max_length="40" name="category_name" type="string"/>
+        <element label="Match category ID" max_length="40" name="match_category_id" type="string"/>
+        <element choice="1" label="Number of participants" max_length="40" name="number_of_participants" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="All ICC teams" sequence="4" value="all_icc_teams"/>
+                <element inactive_on_update="false" label="Three" sequence="2" value="three"/>
+                <element inactive_on_update="false" label="More than three" sequence="3" value="more_than_three"/>
+                <element inactive_on_update="false" label="Two" sequence="1" value="two"/>
+                <element inactive_on_update="false" label="One" sequence="0" value="one"/>
+            </choice>
+        </element>
+    </element>
+</database>

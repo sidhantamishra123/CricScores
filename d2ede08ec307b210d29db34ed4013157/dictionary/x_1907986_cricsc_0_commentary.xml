@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4f886dc683c372104799ec80ceaad371" label="Commentary" max_length="40" name="x_1907986_cricsc_0_commentary" type="collection">
+        <element label="Batting team" max_length="32" name="batting_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Highlight" max_length="40" name="highlight" type="string"/>
+        <element label="Fielder" max_length="32" name="fielder" reference="x_1907986_cricsc_0_players" type="reference"/>
+        <element label="Batsman" max_length="32" name="batsman" reference="x_1907986_cricsc_0_players" type="reference"/>
+        <element label="Innings" max_length="40" name="innings" type="integer"/>
+        <element label="Runs scored" max_length="40" name="runs_scored" type="integer"/>
+        <element label="Bowling team" max_length="32" name="bowling_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element choice="1" label="Event type" max_length="40" name="event_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Extras" sequence="4" value="extras"/>
+                <element inactive_on_update="false" label="Six" sequence="2" value="six"/>
+                <element inactive_on_update="false" label="Wicket" sequence="1" value="wicket"/>
+                <element inactive_on_update="false" label="Runs" sequence="0" value="runs"/>
+                <element inactive_on_update="false" label="Four" sequence="3" value="four"/>
+            </choice>
+        </element>
+        <element choice="1" label="Extra type" max_length="40" name="extra_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Bye" sequence="2" value="bye"/>
+                <element inactive_on_update="false" label="No ball" sequence="1" value="no_ball"/>
+                <element inactive_on_update="false" label="Wides" sequence="0" value="wides"/>
+            </choice>
+        </element>
+        <element label="Score summary" max_length="40" name="score_summary" type="string"/>
+        <element label="Timestamp" max_length="40" name="timestamp" type="glide_date_time"/>
+        <element label="Match" max_length="32" name="match" reference="x_1907986_cricsc_0_matches" type="reference"/>
+        <element label="Commentary text" max_length="1000" name="commentary_text" type="string"/>
+        <element label="Dismissal type" max_length="40" name="dismissal_type" type="string"/>
+        <element label="Short text" max_length="255" name="short_text" type="string"/>
+        <element label="Over number" max_length="40" name="over_number" type="integer"/>
+        <element label="Bowler" max_length="32" name="bowler" reference="x_1907986_cricsc_0_players" type="reference"/>
+        <element label="Ball number" max_length="40" name="ball_number" type="integer"/>
+        <index name="index">
+            <element name="batsman"/>
+        </index>
+        <index name="index2">
+            <element name="batting_team"/>
+        </index>
+        <index name="index3">
+            <element name="bowler"/>
+        </index>
+        <index name="index4">
+            <element name="bowling_team"/>
+        </index>
+        <index name="index5">
+            <element name="fielder"/>
+        </index>
+        <index name="index6">
+            <element name="match"/>
+        </index>
+    </element>
+</database>
