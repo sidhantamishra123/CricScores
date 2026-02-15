@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="41e7658683c372104799ec80ceaad332" label="Squads" max_length="40" name="x_1907986_cricsc_0_squads" type="collection">
+        <element label="Included in Playing XI" max_length="40" name="included_in_playing_xi" type="boolean"/>
+        <element label="Match" max_length="32" name="match" reference="x_1907986_cricsc_0_matches" type="reference"/>
+        <element label="Role" max_length="40" name="role" type="string"/>
+        <element label="Substitute" max_length="40" name="substitute" type="boolean"/>
+        <element label="Team" max_length="32" name="team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Keeper" max_length="40" name="keeper" type="boolean"/>
+        <element label="Player" max_length="32" name="player" reference="x_1907986_cricsc_0_players" type="reference"/>
+        <element label="Series" max_length="32" name="series" reference="x_1907986_cricsc_0_series" type="reference"/>
+        <element label="Captain" max_length="40" name="captain" type="boolean"/>
+        <index name="index">
+            <element name="match"/>
+        </index>
+        <index name="index2">
+            <element name="player"/>
+        </index>
+        <index name="index3">
+            <element name="series"/>
+        </index>
+        <index name="index4">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

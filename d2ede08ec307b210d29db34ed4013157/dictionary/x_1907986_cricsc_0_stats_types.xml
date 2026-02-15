@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2521a50a838372104799ec80ceaad313" label="Stats types" max_length="40" name="x_1907986_cricsc_0_stats_types" type="collection">
+        <element label="Stats name" max_length="40" name="stats_name" type="string"/>
+        <element label="Applicable format" max_length="32" name="applicable_format" reference="x_1907986_cricsc_0_match_formats" type="reference"/>
+        <element label="Stats type ID" max_length="40" name="stats_type_id" type="string"/>
+        <element display="true" label="Short name" max_length="40" name="short_name" type="string"/>
+        <element label="All formats" max_length="40" name="all_formats" type="boolean"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element choice="1" label="Stats category" max_length="40" name="stats_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Fielding" sequence="2" value="fielding"/>
+                <element inactive_on_update="false" label="Bowling" sequence="1" value="bowling"/>
+                <element inactive_on_update="false" label="Batting" sequence="0" value="batting"/>
+                <element inactive_on_update="false" label="Team" sequence="3" value="team"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="applicable_format"/>
+        </index>
+    </element>
+</database>

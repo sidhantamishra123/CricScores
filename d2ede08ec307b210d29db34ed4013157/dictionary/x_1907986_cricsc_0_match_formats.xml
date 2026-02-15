@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c5401582830372104799ec80ceaad3c7" label="Match formats" max_length="40" name="x_1907986_cricsc_0_match_formats" type="collection">
+        <element choice="1" label="Number of super overs supported" max_length="40" name="number_of_super_overs_supported" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Unlimited" sequence="1" value="unlimited"/>
+                <element inactive_on_update="false" label="Limited" sequence="0" value="limited"/>
+            </choice>
+        </element>
+        <element label="Max innings" max_length="40" name="max_innings" type="integer"/>
+        <element label="Max overs per innings" max_length="40" name="max_overs_per_innings" type="integer"/>
+        <element label="Uses super over" max_length="40" name="uses_super_over" type="boolean"/>
+        <element label="How many super overs" max_length="40" name="how_many_super_overs" type="integer"/>
+        <element label="Has powerplay" max_length="40" name="has_powerplay" type="boolean"/>
+        <element display="true" label="Short code" max_length="40" name="short_code" type="string"/>
+        <element label="Format ID" max_length="40" name="format_id" type="string"/>
+        <element choice="1" label="Match type" max_length="40" name="match_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Multi day" sequence="1" value="multi_day"/>
+                <element inactive_on_update="false" label="Limited overs" sequence="0" value="limited_overs"/>
+            </choice>
+        </element>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Format name" max_length="40" name="format_name" type="string"/>
+        <element label="Days" max_length="40" name="days" type="integer"/>
+        <element choice="1" label="Source" max_length="40" name="source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Manual" sequence="1" value="manual"/>
+                <element inactive_on_update="false" label="API" sequence="0" value="api"/>
+            </choice>
+        </element>
+    </element>
+</database>

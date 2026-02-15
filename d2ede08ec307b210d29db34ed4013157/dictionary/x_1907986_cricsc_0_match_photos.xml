@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="26be91c2838372104799ec80ceaad30d" label="Match photos" max_length="40" name="x_1907986_cricsc_0_match_photos" type="collection">
+        <element label="Team" max_length="32" name="team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element display="true" label="Headline" max_length="255" name="headline" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
+            </choice>
+        </element>
+        <element label="Caption" max_length="255" name="caption" type="string"/>
+        <element label="Image hash" max_length="40" name="image_hash" type="string"/>
+        <element choice="1" label="Visibility" max_length="40" name="visibility" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Public" sequence="0" value="public"/>
+                <element inactive_on_update="false" label="Private" sequence="1" value="private"/>
+            </choice>
+        </element>
+        <element label="Published time" max_length="40" name="published_time" type="glide_date_time"/>
+        <element label="Image ID" max_length="40" name="image_id" type="string"/>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Players" max_length="1024" name="players" reference="x_1907986_cricsc_0_players" type="glide_list"/>
+        <element label="Match" max_length="32" name="match" reference="x_1907986_cricsc_0_matches" type="reference"/>
+        <element label="Gallery ID" max_length="40" name="gallery_id" type="string"/>
+        <index name="index">
+            <element name="match"/>
+        </index>
+        <index name="index2">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

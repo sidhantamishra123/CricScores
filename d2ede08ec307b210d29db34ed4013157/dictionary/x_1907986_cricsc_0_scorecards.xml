@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1edd9142838372104799ec80ceaad3f1" label="Scorecards" max_length="40" name="x_1907986_cricsc_0_scorecards" type="collection">
+        <element label="Innings" max_length="40" name="innings" type="integer"/>
+        <element label="Overs" max_length="40" name="overs" type="integer"/>
+        <element label="Score ID" max_length="40" name="score_id" type="string"/>
+        <element label="Target" max_length="40" name="target" type="integer"/>
+        <element label="Required run rate" max_length="38" name="required_run_rate" type="decimal"/>
+        <element label="Wickets" max_length="40" name="wickets" type="integer"/>
+        <element label="Score description" max_length="40" name="score_description" type="string"/>
+        <element label="Batting team" max_length="32" name="batting_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Bowling team" max_length="32" name="bowling_team" reference="x_1907986_cricsc_0_teams" type="reference"/>
+        <element label="Match" max_length="32" name="match" reference="x_1907986_cricsc_0_matches" type="reference"/>
+        <element label="Runs" max_length="40" name="runs" type="integer"/>
+        <element label="Run rate" max_length="38" name="run_rate" type="decimal"/>
+        <index name="index">
+            <element name="batting_team"/>
+        </index>
+        <index name="index2">
+            <element name="bowling_team"/>
+        </index>
+        <index name="index3">
+            <element name="match"/>
+        </index>
+    </element>
+</database>

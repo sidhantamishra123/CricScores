@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d93d85ca83cf32104799ec80ceaad321" label="Match type" max_length="40" name="x_1907986_cricsc_0_match_type" type="collection">
+        <element label="Match type ID" max_length="40" name="match_type_id" type="string"/>
+        <element label="Short code" max_length="40" name="short_code" type="string"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element display="true" label="Match type" max_length="40" name="match_type" type="string"/>
+    </element>
+</database>

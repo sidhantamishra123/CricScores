@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="series_name" label="Series name" language="en" table="x_1907986_cricsc_0_series">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>series_name</element>
+            <help/>
+            <hint/>
+            <label>Series name</label>
+            <language>en</language>
+            <name>x_1907986_cricsc_0_series</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-02-15 07:52:35</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Series name</sys_name>
+            <sys_package display_value="CricScores" source="x_1907986_cricsc_0">d2ede08ec307b210d29db34ed4013157</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CricScores">d2ede08ec307b210d29db34ed4013157</sys_scope>
+            <sys_update_name>sys_documentation_x_1907986_cricsc_0_series_series_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-02-15 07:52:41</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

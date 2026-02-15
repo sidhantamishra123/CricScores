@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="00d9410683cf32104799ec80ceaad31b" label="Venues" max_length="40" name="x_1907986_cricsc_0_venues" type="collection">
+        <element label="Latitude" max_length="38" name="latitude" type="decimal"/>
+        <element display="true" label="Venue name" max_length="40" name="venue_name" type="string"/>
+        <element label="Lowest total" max_length="40" name="lowest_total" type="integer"/>
+        <element label="Capacity" max_length="40" name="capacity" type="integer"/>
+        <element label="Matches won bowling first" max_length="40" name="matches_won_bowling_first" type="integer"/>
+        <element label="Venue ID" max_length="40" name="venue_id" type="string"/>
+        <element label="Established year" max_length="40" name="established_year" type="integer"/>
+        <element label="Average scores scored" max_length="40" name="average_scores_scored" type="integer"/>
+        <element label="Longitutde" max_length="38" name="longitutde" type="decimal"/>
+        <element label="City" max_length="40" name="city" type="string"/>
+        <element label="Image" max_length="40" name="image" type="user_image"/>
+        <element label="Country" max_length="32" name="country" reference="x_1907986_cricsc_0_countries" type="reference"/>
+        <element label="Home teams" max_length="40" name="home_teams" type="glide_list"/>
+        <element label="Total matches" max_length="40" name="total_matches" type="integer"/>
+        <element label="Highest total" max_length="40" name="highest_total" type="integer"/>
+        <element label="Image URL" max_length="1024" name="image_url" type="url"/>
+        <element label="Floodlights available" max_length="40" name="floodlights_available" type="integer"/>
+        <element label="Ends" max_length="40" name="ends" type="glide_list"/>
+        <element label="Matches won batting first" max_length="40" name="matches_won_batting_first" type="integer"/>
+        <element label="Highest score chased" max_length="40" name="highest_score_chased" type="integer"/>
+        <element label="Short name" max_length="40" name="short_name" type="string"/>
+        <element label="Timezone" max_length="40" name="timezone" type="string"/>
+        <element choice="1" label="Pitch type" max_length="40" name="pitch_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Batting" sequence="0" value="batting"/>
+                <element inactive_on_update="false" label="Bowling" sequence="1" value="bowling"/>
+                <element inactive_on_update="false" label="Balanced" sequence="2" value="balanced"/>
+            </choice>
+        </element>
+        <element label="Lowest score defended" max_length="40" name="lowest_score_defended" type="integer"/>
+        <element label="Image ID" max_length="40" name="image_id" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

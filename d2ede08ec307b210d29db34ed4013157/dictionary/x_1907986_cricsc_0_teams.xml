@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2fab410a83cf32104799ec80ceaad3ae" label="Teams" max_length="40" name="x_1907986_cricsc_0_teams" type="collection">
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Transgender" sequence="2" value="transgender"/>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+                <element inactive_on_update="false" label="Disability" sequence="3" value="disability"/>
+            </choice>
+        </element>
+        <element label="Team ID" max_length="40" name="team_id" type="string"/>
+        <element label="Short name" max_length="40" name="short_name" type="string"/>
+        <element label="Team logo URL" max_length="1024" name="team_logo_url" type="url"/>
+        <element label="Team logo" max_length="40" name="team_logo" type="user_image"/>
+        <element label="Cricket board short name" max_length="40" name="cricket_board_short_name" type="string"/>
+        <element label="Last synced" max_length="40" name="last_synced" type="glide_date_time"/>
+        <element display="true" label="Team name" max_length="40" name="team_name" type="string"/>
+        <element label="ICC ODI Ranking" max_length="40" name="icc_odi_ranking" type="string"/>
+        <element label="ICC Test Ranking" max_length="40" name="icc_test_ranking" type="string"/>
+        <element label="Home venue" max_length="32" name="home_venue" reference="x_1907986_cricsc_0_venues" type="reference"/>
+        <element label="ICC T20 Ranking" max_length="40" name="icc_t20_ranking" type="string"/>
+        <element label="Cricket board name" max_length="40" name="cricket_board_name" type="string"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Team type" max_length="32" name="team_type" reference="x_1907986_cricsc_0_match_type" type="reference"/>
+        <element label="Country" max_length="32" name="country" reference="x_1907986_cricsc_0_countries" type="reference"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="home_venue"/>
+        </index>
+    </element>
+</database>
